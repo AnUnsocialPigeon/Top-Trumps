@@ -7,17 +7,19 @@
         Title="Top Trumps" Height="450" Width="800" Background="#FF101010">
     <Grid>
         <Grid Name="CardGrid" Background="#FF202020" HorizontalAlignment="Left" Height="356" Margin="10,10,0,0" VerticalAlignment="Top" Width="250">
-            <Image Name="DisplayCardIMG" HorizontalAlignment="Left" Height="174" Margin="10,10,0,0" VerticalAlignment="Top" Width="230" ClipToBounds="True"/>
+            <Image Name="DisplayCardIMG" Height="174" Margin="10,10,10,0" VerticalAlignment="Top" Width="230" ClipToBounds="True"/>
             <TextBlock Name="DisplayCardInfo" HorizontalAlignment="Left" Margin="10,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="157" Width="230" Foreground="White" FontFamily="Consolas" FontSize="19"><Run Text="Name"/><LineBreak/><Run Text="Atc"/><LineBreak/><Run Text="Def"/><LineBreak/><Run Text="Soa"/><LineBreak/><Run Text="sod"/><LineBreak/><Run Text="spd"/><LineBreak/><Run Text="shin"/></TextBlock>
         </Grid>
         <Grid Name="CurrentCardGrid" Background="#FF202020" HorizontalAlignment="Left" Height="356" Margin="534,10,0,0" VerticalAlignment="Top" Width="250">
-            <Image Name="CurrentCardIMG" HorizontalAlignment="Left" Height="174" Margin="10,10,0,0" VerticalAlignment="Top" Width="230" ClipToBounds="True"/>
+            <Image Name="CurrentCardIMG" Height="174" Margin="10,10,10,0" VerticalAlignment="Top" Width="230" ClipToBounds="True"/>
             <TextBlock x:Name="CurrentCardInfo" HorizontalAlignment="Left" Margin="10,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="157" Width="230" Foreground="White" FontFamily="Consolas" FontSize="19"/>
         </Grid>
 
-        <Button Name="NewCard" Content="New Card" HorizontalAlignment="Left" Margin="265,54,0,0" VerticalAlignment="Top" Width="122" Height="39" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="NewDisplayCard" FontWeight="Bold" FontStyle="Italic"/>
-        <Button Name="AddCardsBTN" Content="Add Card" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Width="122" Height="39" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Name="NewCard" Content="Roll Card" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Width="137" Height="39" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="NewDisplayCard" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Name="AddCardsBTN" Content="Add Card" HorizontalAlignment="Left" Margin="407,10,0,0" VerticalAlignment="Top" Width="122" Height="39" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
         <Button Name="CollectCardBTN" Content="Collect Card" HorizontalAlignment="Left" Margin="10,371,0,0" VerticalAlignment="Top" Width="250" Height="39" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="CollectCardBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBlock Name="QuantityBox" HorizontalAlignment="Left" Margin="534,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="250" Foreground="White" FontFamily="Consolas" FontSize="24" TextAlignment="Center" Text="Quantity: "/>
+        <TextBlock x:Name="QuantityBox" HorizontalAlignment="Left" Margin="534,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="250" Foreground="White" FontFamily="Consolas" FontSize="24" Background="#FF202020"><Run Text=" "/><Run Text="Quantity: "/></TextBlock>
+        <Button Name="PlayBTN" Content="PLAY" HorizontalAlignment="Left" Margin="265,270,0,0" VerticalAlignment="Top" Width="264" Height="140" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="100" Click="PlayButton_Click" FontWeight="Bold"/>
+        <TextBlock Name="CurrencyBox" HorizontalAlignment="Left" Margin="265,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="264" Foreground="White" FontFamily="Consolas" FontSize="24" Background="#FF202020"><Run Text="Balance: "/><LineBreak/><Run Text="Card Cost: "/><LineBreak/><Run Text="Rolls Left: "/></TextBlock>
     </Grid>
 </Window>

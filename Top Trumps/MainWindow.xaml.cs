@@ -120,5 +120,12 @@ namespace Top_Trumps {
             // EVERYTHING REQUIRES DISPATCHERS WHYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
             Dispatcher.Invoke(() => new DisplayCard().RotateDisplayCard(CurrentCardGrid, CurrentCardIMG, CurrentCardInfo, QuantityBox, cards));
         }
+
+        private void PlayButton_Click(object sender, RoutedEventArgs e) {
+            GameWindow g = new GameWindow(cards);
+            Hide();
+            g.ShowDialog();
+            Show();
+        }
     }
 }

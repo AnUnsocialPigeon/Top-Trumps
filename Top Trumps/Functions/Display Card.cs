@@ -48,7 +48,7 @@ namespace Top_Trumps.Functions {
 
             // Change
             ChangeDisplayCard(grid, image, textBlock, collection[currentCardRotate]);
-            quantityText.Text = "Quantity: " + collection[currentCardRotate].Quantity.ToString();
+            quantityText.Text = " Quantity: " + collection[currentCardRotate].Quantity.ToString();
             currentCardRotate++;
         }
     }

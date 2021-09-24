@@ -1,12 +1,26 @@
 ﻿<Window x:Class="Top_Trumps.Windows.GameWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Top_Trumps.Windows"
         mc:Ignorable="d"
-        Title="GameWindow" Height="450" Width="800">
+        Title="Game" Height="404.4" Width="678.8" Background="#FF101010">
     <Grid>
-        
+        <Grid Name="PlayerCardGrid" Background="#FF202020" HorizontalAlignment="Left" Height="355" Margin="10,10,0,0" VerticalAlignment="Top" Width="250">
+            <Image Name="PlayerDisplayCardIMG" Height="174" Margin="10,10,10,0" VerticalAlignment="Top" Width="230" ClipToBounds="True"/>
+            <TextBlock Name="PlayerDisplayCardInfo" HorizontalAlignment="Left" Margin="10,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="157" Width="230" Foreground="White" FontFamily="Consolas" FontSize="19"><Run Text="Name"/><LineBreak/><Run Text="Atc"/><LineBreak/><Run Text="Def"/><LineBreak/><Run Text="Soa"/><LineBreak/><Run Text="sod"/><LineBreak/><Run Text="spd"/><LineBreak/><Run Text="shin"/></TextBlock>
+        </Grid>
+        <Grid Name="EnemyCardGrid" Background="#FF202020" HorizontalAlignment="Left" Height="355" Margin="412,10,0,0" VerticalAlignment="Top" Width="250">
+            <Image Name="EnemyDisplayCardIMG" Height="174" Margin="10,10,10,0" VerticalAlignment="Top" Width="230" ClipToBounds="True" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/434px-Unknown_person.jpg"/>
+            <TextBlock x:Name="EnemyDisplayCardInfo" HorizontalAlignment="Left" Margin="10,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="157" Width="230" Foreground="White" FontFamily="Consolas" FontSize="19"><Run Text="Name"/><Run Text=": Unknown"/><LineBreak/><Run Text="Attack: Unknown"/><LineBreak/><Run Text="Defence: Unknown"/><LineBreak/><Run Text="Sp.Attack: Unknown"/><LineBreak/><Run Text="Sp.Defence: Unknown"/><LineBreak/><Run Text="Speed: Unknown"/><LineBreak/><Run Text="Shiny: Unknown"/></TextBlock>
+        </Grid>
+        <TextBlock x:Name="CurrencyBox" HorizontalAlignment="Left" Margin="265,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="142" Foreground="White" FontFamily="Consolas" FontSize="30" Background="#FF202020" TextAlignment="Center"><Run Text="$"/><Run Text=": "/><Run Text="-"/><LineBreak/><Run Text="Result:"/><LineBreak/><Run Text="None"/></TextBlock>
+
+        <Button x:Name="AttackBTN" Content="Attack" HorizontalAlignment="Left" Margin="265,125,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="DefenceBTN" Content="Defence" HorizontalAlignment="Left" Margin="265,174,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="SpAttackBTN" Content="Sp.Attack" HorizontalAlignment="Left" Margin="265,223,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="SpDefenceBTN" Content="Sp.Defence" HorizontalAlignment="Left" Margin="265,272,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="SpeedBTN" Content="Speed" HorizontalAlignment="Left" Margin="265,321,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+
     </Grid>
 </Window>
