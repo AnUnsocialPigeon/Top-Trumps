@@ -38,5 +38,9 @@ namespace Top_Trumps.Windows {
             // Sets the enemy's first card
             currentEnemyCards = cards[rnd.Next(cards.Count)];
         }
+
+        private void AddCardsBTN_Click(object sender, RoutedEventArgs e) {
+
+        }
     }
 }
