@@ -32,6 +32,9 @@
             Quantity = quantity;
         }
 
+
+        public int TotalStats => Attack + Defence + SpAttack + SpDefence + Speed;
+
         public new string ParseToString => new Card(this).ParseToString + (Quantity == -1 ? "" : "," + Quantity.ToString());
         public int Quantity { get; set; }
     }

@@ -40,6 +40,7 @@
             Shiny = c.Shiny;
         }
 
+
         // Variable Instantiation for the Card Class.
         public string Name { get; set; }
         public string ImgURL { get; set; }

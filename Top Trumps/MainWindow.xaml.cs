@@ -56,15 +56,6 @@ namespace Top_Trumps {
         }
 
         /// <summary>
-        /// Nothing here yet
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void DelCardsBTN_Click(object sender, RoutedEventArgs e) {
-
-        }
-
-        /// <summary>
         /// Get a New Random Card from the database
         /// </summary>
         /// <param name="sender"></param>

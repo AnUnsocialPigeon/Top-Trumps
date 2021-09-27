@@ -31,6 +31,14 @@ namespace Top_Trumps.Functions {
             GC.Collect();
         }
 
+        /// <summary>
+        /// Will update the quantity box for how many cards you have
+        /// </summary>
+        /// <param name="textBlock"></param>
+        /// <param name="quantity"></param>
+        public void ChangeQuantityBox(TextBlock textBlock, int quantity) => textBlock.Text = " Quantity: " + quantity.ToString();
+
+
         // The current card that is on rotation from the collection
         private static int currentCardRotate = 0;
 
@@ -48,7 +56,7 @@ namespace Top_Trumps.Functions {
 
             // Change
             ChangeDisplayCard(grid, image, textBlock, collection[currentCardRotate]);
-            quantityText.Text = " Quantity: " + collection[currentCardRotate].Quantity.ToString();
+            ChangeQuantityBox(quantityText, collection[currentCardRotate].Quantity);
             currentCardRotate++;
         }
     }

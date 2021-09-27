@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Game" Height="404.4" Width="678.8" Background="#FF101010">
+        Title="Game" Height="445.2" Width="678.8" Background="#FF101010">
     <Grid>
         <Grid Name="PlayerCardGrid" Background="#FF202020" HorizontalAlignment="Left" Height="355" Margin="10,10,0,0" VerticalAlignment="Top" Width="250">
             <Image Name="PlayerDisplayCardIMG" Height="174" Margin="10,10,10,0" VerticalAlignment="Top" Width="230" ClipToBounds="True"/>
@@ -16,11 +16,13 @@
         </Grid>
         <TextBlock x:Name="CurrencyBox" HorizontalAlignment="Left" Margin="265,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="142" Foreground="White" FontFamily="Consolas" FontSize="30" Background="#FF202020" TextAlignment="Center"><Run Text="$"/><Run Text=": "/><Run Text="-"/><LineBreak/><Run Text="Result:"/><LineBreak/><Run Text="None"/></TextBlock>
 
-        <Button x:Name="AttackBTN" Content="Attack" HorizontalAlignment="Left" Margin="265,125,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:Name="DefenceBTN" Content="Defence" HorizontalAlignment="Left" Margin="265,174,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:Name="SpAttackBTN" Content="Sp.Attack" HorizontalAlignment="Left" Margin="265,223,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:Name="SpDefenceBTN" Content="Sp.Defence" HorizontalAlignment="Left" Margin="265,272,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:Name="SpeedBTN" Content="Speed" HorizontalAlignment="Left" Margin="265,321,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AddCardsBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="AttackBTN" Content="Attack" HorizontalAlignment="Left" Margin="265,125,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="AttackBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="DefenceBTN" Content="Defence" HorizontalAlignment="Left" Margin="265,174,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="DefenceBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="SpAttackBTN" Content="Sp.Attack" HorizontalAlignment="Left" Margin="265,223,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="SpAttackBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="SpDefenceBTN" Content="Sp.Defence" HorizontalAlignment="Left" Margin="265,272,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="SpDefenceBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="SpeedBTN" Content="Speed" HorizontalAlignment="Left" Margin="265,321,0,0" VerticalAlignment="Top" Width="142" Height="44" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="SpeedBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock x:Name="QuantityBox" HorizontalAlignment="Left" Margin="10,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="250" Foreground="White" FontFamily="Consolas" FontSize="24" Background="#FF202020"><Run Text=" "/><Run Text="Quantity: "/></TextBlock>
+        <Button x:Name="ExitBTN" Content="Exit" HorizontalAlignment="Left" Margin="561,370,0,0" VerticalAlignment="Top" Width="101" Height="35" Background="#FF8A03F3" BorderBrush="#FF3200A0" Foreground="White" FontFamily="Consolas" FontSize="24" Click="ExitBTN_Click" FontWeight="Bold" FontStyle="Italic"/>
 
     </Grid>
 </Window>
